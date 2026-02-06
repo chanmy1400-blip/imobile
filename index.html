@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imobile.7 | Linktree</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        
+        body {
+            /* Background ပုံထည့်တဲ့နေရာ */
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('bg.jpg');
+            
+            /* ဖုန်းရော Laptop မှာပါ ပုံမပျက်အောင် ထိန်းပေးတဲ့အပိုင်း */
+            background-size: cover;          /* ပုံကို screen အပြည့်ချဲ့ပေးသည် */
+            background-position: center;    /* ပုံရဲ့ အလယ်ကို ဗဟိုပြုသည် */
+            background-repeat: no-repeat;    /* ပုံတွေ ထပ်မနေအောင် လုပ်သည် */
+            background-attachment: fixed;    /* Scroll ဆွဲရင် နောက်ခံပုံက ငြိမ်နေစေသည် */
+            
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh; padding-top: 60px;
+        }
+
+        .container { text-align: center; width: 90%; max-width: 400px; flex: 1; }
+        
+        .profile-img {
+            width: 110px; height: 110px; border-radius: 50%;
+            object-fit: cover; border: 3px solid white; margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 { color: white; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        
+        .links-container { display: flex; flex-direction: column; gap: 16px; }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.9); /* ခလုတ်ကို အနည်းငယ် ကြည်လင်စေသည် */
+            color: #333; padding: 18px;
+            text-decoration: none; border-radius: 8px; font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .link-card:hover { transform: scale(1.02); background: white; }
+
+        footer { padding: 20px; color: white; font-size: 14px; text-shadow: 1px 1px 2px black; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Profile" class="profile-img">
+        <h1>imobile.7</h1>
+
+        <div class="links-container">
+            <a href="https://www.facebook.com/share/1JyDWYjb6K/?mibextid=wwXIfr" class="link-card">Facebook</a>
+            <a href="https://www.tiktok.com/@imobile.7" target="_blank" class="link-card">TikTok</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>i Mobile ဖုန်းဆိုင်
+နောင်အင်အားကစားကွင်းအနီး,အေးသာယာမြို့
+တောင်ကြီးမြို့နယ်
+☎️09964280683 ☎️09261746841</p>
+    </footer>
+
+</body>
+</html>
